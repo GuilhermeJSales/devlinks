@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# 🔗 DevLinks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **DevLinks** é uma aplicação web onde usuários podem se cadastrar, fazer login e personalizar seus próprios links de redes sociais. É possível adicionar URLs de plataformas como Facebook, YouTube e Instagram, além de personalizar as cores de fundo da página e dos botões. A aplicação também permite visualizar as mudanças em tempo real com base nas atualizações feitas pelo usuário.
 
-Currently, two official plugins are available:
+Você pode acessar o projeto online pelo link:  
+👉 [Deploy](https://devlinks-five-mu.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Cadastro e login de usuários com Firebase Authentication;
+- Cadastro e edição dos links de Facebook, YouTube e Instagram;
+- Visualização do perfil com os links cadastrados;
+- Escolha de cor de fundo e cor do texto dos botões;
+- Interface responsiva e intuitiva;
+- Armazenamento de dados no Firestore.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Router](https://reactrouter.com/)
+- [Firebase](https://firebase.google.com/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+---
+
+## 🧪 Executando o Projeto Localmente
+
+```bash
+git clone https://github.com/GuilhermeJSales/devlinks.git
+cd devlinks
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧠 Aprendizados
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Autenticação com Firebase;
+- Manipulação de banco de dados em tempo real com Firestore;
+- Criação de rotas protegidas com React Router;
+- Personalização de UI com TailwindCSS;
+- Organização de estado e componentes reutilizáveis com React + TypeScript;
+- Publicação com Vercel.
+
+🙋‍♂️ Autor
+- Projeto desenvolvido no curso [Full Stack Pro](https://sujeitoprogramador.com/fullstackpro/?ref=R87195062M)
+- Feito com 💙 por Guilherme J Sales
